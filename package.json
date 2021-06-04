@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "markdown-escape": "^1.1.0"
+    "markdown-escape": "github:SettingDust/markdown-escape.js#master"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",
