@@ -3,7 +3,10 @@ import escape from 'markdown-escape'
 
 async function run(): Promise<void> {
   try {
-    core.setOutput('text', escape(core.getInput('text')))
+    const inputs = core.getInput('text').split('⭐')
+    for (let i = 0; i < inputs.length; i++) {
+      core.setOutput(i.toString(), escape(inputs[i]))
+    }
   } catch (error) {
     core.setFailed(error.message)
   }
