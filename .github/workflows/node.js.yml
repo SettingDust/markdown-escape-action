@@ -23,9 +23,9 @@ jobs:
       - name: Build & push
         run: |
           rm -rf ./dist \
-          && npm i \
-          && npm run build \
-          && npm run package \
+          && yarn \
+          && yarn run build \
+          && yarn run package \
           && git config --local user.email "action@github.com" \
           && git config --local user.name "GitHub Action" \
           && git add -A && git commit -m 'Build and package' --allow-empty \
