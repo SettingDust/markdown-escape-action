@@ -28,7 +28,7 @@
     "markdown-escape": "github:SettingDust/markdown-escape.js#master"
   },
   "devDependencies": {
-    "@types/node": "^14.14.9",
+    "@types/node": "^15.12.4",
     "@typescript-eslint/parser": "^4.8.1",
     "@vercel/ncc": "^0.25.1",
     "eslint": "^7.17.0",
