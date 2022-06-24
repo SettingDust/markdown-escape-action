@@ -1,5 +1,5 @@
 {
-  "name": "typescript-action",
+  "name": "telegram-markdown-escape",
   "version": "0.0.0",
   "private": true,
   "description": "TypeScript template action",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/SettingDust/telegram-markdown-escape.git"
   },
   "keywords": [
     "actions",
@@ -24,17 +24,18 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "markdown-escape": "github:SettingDust/markdown-escape.js#2ba4dc"
+    "@actions/core": "^1.9.0",
+    "telegram-format": "^2.1.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.9",
-    "@typescript-eslint/parser": "^4.8.1",
-    "@vercel/ncc": "^0.25.1",
-    "eslint": "^7.17.0",
-    "eslint-plugin-github": "^4.1.1",
-    "js-yaml": "^3.14.0",
-    "prettier": "2.2.1",
-    "typescript": "^4.1.3"
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "@vercel/ncc": "^0.34.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-github": "^4.3.6",
+    "js-yaml": "^4.1.0",
+    "prettier": "2.7.1",
+    "typescript": "^4.7.4"
   }
 }
