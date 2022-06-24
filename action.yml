@@ -3,7 +3,12 @@ description: 'Escape text to markdown'
 author: 'SettingDust'
 inputs:
   text:
+    required: true
     description: 'Text'
+  type:
+    required: false
+    description: 'html | markdown | markdownv2'
+    default: markdownv2
 runs:
   using: 'node12'
   main: 'dist/index.js'
