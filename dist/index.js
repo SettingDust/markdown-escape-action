@@ -42,10 +42,11 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __importStar(__nccwpck_require__(186));
 const formats = __importStar(__nccwpck_require__(929));
 function run() {
+    var _a;
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const inputs = core.getInput('text').split('\n');
-            const type = core.getInput('type');
+            const type = (_a = core.getInput('type')) !== null && _a !== void 0 ? _a : 'markdownv2';
             for (let i = 0; i < inputs.length; i++)
                 core.setOutput(i.toString(), formats[type].escape(inputs[i]));
         }
